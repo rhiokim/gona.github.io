@@ -1,8 +1,15 @@
+// @flow
+import type {Element} from 'react'
 import Link from 'next/link'
 import Head from './head'
 import Nav from './nav'
 
-export default ({children, title}) => (
+type Props = {
+  children?: Element<any>,
+  title?: string
+}
+
+export default ({children, title = 'Gona'}: Props) => (
   <div>
    <Head title={`Walk slowly | ${title}`} />
 

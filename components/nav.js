@@ -1,12 +1,19 @@
+// @flow
 import Head from './head';
 import Link from 'next/link';
 
-const links = [
+type ILink = {
+  href: string,
+  label: string,
+  key?: string
+}
+
+const links: ILink[] = [
   {href: '/', label: 'Home'},
   {href: '/release-notes', label: 'Release Notes'},
   {href: '/help', label: 'Help'},
   {href: 'https://github.com/rhiokim/gona', label: 'Github'},
-].map((link, i) => {
+].map((link: ILink, i: number) => {
   link.key = `nav-link-${i}`;
   return link;
 });

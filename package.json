@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "lint": "flow",
     "dev": "next",
     "build": "next build && next export",
     "start": "next start",
@@ -13,10 +14,16 @@
     "fix:link": "replace '<a href=\"/' '<a href=\"/gona/' ./out/**.html ./out/**/*.html"
   },
   "dependencies": {
-    "gh-pages": "^1.0.0",
     "next": "beta",
+    "prop-types": "^15.5.10",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "flow-bin": "^0.46.0",
+    "gh-pages": "^1.0.0",
     "replace": "^0.3.0"
   }
 }
