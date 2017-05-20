@@ -8,7 +8,7 @@ export default () => (
 
     <div className="container">
       <section className="header">
-        <img className="logo" src="/static/images/logo.png"/>
+        <img className="logo" src="static/images/logo.png"/>
         <Nav />
         <h2 className="title">Do you <b>gonna</b> <u>do</u> something?</h2>
         <div className="row story">
@@ -20,8 +20,8 @@ export default () => (
       <div className="section philosophy center">
         <div className="container">
           <h4 className="section-heading"><b>Gona</b>: CLI<small>(Command Line Interface)</small> and GUI</h4>
-          <img src="/static/images/gona-cli.png" />
-          <img src="/static/images/gona-tray-app.png" />
+          <img src="static/images/gona-cli.png" />
+          <img src="static/images/gona-tray-app.png" />
         </div>
       </div>
 
@@ -42,7 +42,7 @@ export default () => (
       <div className="section get-help">
         <div className="container">
           <h4 className="section-heading">Need help getting started?</h4>
-          <p className="section-description">Gona is dead simple to start with your laptop. If you want to learn more, just visit the help!</p>
+          <p className="section-description">Gona is dead simple to manage TODO. If you want to learn more, just visit the help!</p>
           <a className="button button-primary" href="http://getskeleton.com">View Tutorial Videos</a>
         </div>
       </div>

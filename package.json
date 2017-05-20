@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "npm run build && gh-pages -d out"
   },
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "next": "beta",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
