@@ -7,8 +7,10 @@
     "dev": "next",
     "build": "next build && next export",
     "start": "next start",
-    "deploy": "npm run build && npm run deploy:after && gh-pages -d out --remote source",
-    "deploy:after": "mv out/_next out/next_ && replace /_next/ /gona/next_/ ./out/**.html ./out/**/*.html"
+    "deploy": "npm run build && npm run fix:ghpages && npm run fix:static && npm run fix:link && gh-pages -d out --remote source",
+    "fix:ghpages": "mv out/_next out/next_ && replace /_next/ /gona/next_/ ./out/**.html ./out/**/*.html",
+    "fix:static": "replace /static/ /gona/static/ ./out/**.html ./out/**/*.html",
+    "fix:link": "replace '<a href=\"/' '<a href=\"/gona/' ./out/**.html ./out/**/*.html"
   },
   "dependencies": {
     "gh-pages": "^1.0.0",

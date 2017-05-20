@@ -2,21 +2,19 @@ import Head from './head';
 import Link from 'next/link';
 
 const links = [
-  {href: 'release-notes', label: 'Release Notes'},
-  {href: 'help', label: 'Help'},
+  {href: '/', label: 'Home'},
+  {href: '/release-notes', label: 'Release Notes'},
+  {href: '/help', label: 'Help'},
   {href: 'https://github.com/rhiokim/gona', label: 'Github'},
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`;
+].map((link, i) => {
+  link.key = `nav-link-${i}`;
   return link;
 });
 
 const Nav = () => (
   <nav className="nav-link">
-    <Link prefetch href="/gona">
-      <a>Home</a>
-    </Link>
     {links.map(({key, href, label}) => (
-      <Link href={href}>
+      <Link href={href} key={key}>
         <a>{label}</a>
       </Link>
     ))}

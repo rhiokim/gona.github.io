@@ -1,4 +1,5 @@
 exports.exportPathMap = () => ({
   "/": { page: "/" },
-  "/about": { page: "/about" }
+  "/help": { page: "/help" },
+  "/release-notes": { page: "/release-notes" }
 })

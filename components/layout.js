@@ -8,7 +8,7 @@ export default ({children, title}) => (
 
    <div className="container">
      <section className="header">
-       <img className="logo" src="static/images/logo.png"/>
+       <img className="logo" src="/static/images/logo.png"/>
        <Nav />
      </section>
    </div>
