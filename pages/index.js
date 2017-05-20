@@ -1,21 +1,16 @@
-import Link from 'next/link';
-import Head from '../components/head';
-import Nav from '../components/nav';
+import Layout from '../components/layout'
 
 export default () => (
-  <div>
-    <Head title="Walk slowly | TODO App" />
-
+  <Layout>
     <div className="container">
-      <section className="header">
-        <img className="logo" src="static/images/logo.png"/>
-        <Nav />
-        <h2 className="title">Do you <b>gonna</b> <u>do</u> something?</h2>
-        <div className="row story">
-          Tasks, Meetings, Alarm and Articles... <br/>
+      <div className="section philosophy center">
+        <div className="container">
+          <h2 className="title">Do you <b>gonna</b> <u>do</u> something?</h2>
+          <div className="row story">
+            Tasks, Meetings, Alarm and Articles... <br/>
+          </div>
         </div>
-      </section>
-
+      </div>
 
       <div className="section philosophy center">
         <div className="container">
@@ -47,6 +42,5 @@ export default () => (
         </div>
       </div>
     </div>
-    <p className="copyright center">© 2017 <a href="https://github.com/slothlab">Slothlab</a>. All rights reserved.</p>
-  </div>
+  </Layout>
 );

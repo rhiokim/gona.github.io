@@ -1,3 +1,11 @@
+import Layout from '../components/layout'
+
 export default () => (
-  <div>about page</div>
+  <Layout>
+    <div className="container">
+      <div className="section center">
+        about page
+      </div>
+    </div>
+  </Layout>
 )
