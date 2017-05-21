@@ -15,7 +15,7 @@ export default () => (
 
       <div className="section philosophy center">
         <div className="container">
-          <h4 className="section-heading"><b>Gona</b>: CLI<small>(Command Line Interface)</small> and GUI</h4>
+          <h4 className="section-heading"><b>Gona</b>: CLI and GUI</h4>
           <img src="/static/images/gona-cli.png" />
           <img src="/static/images/gona-tray-app.png" />
         </div>

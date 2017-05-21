@@ -5,7 +5,8 @@ export default () => (
   <Layout>
     <div className="container">
       <div className="section center">
-        help
+        <img src="/static/images/sloth.png" width="50" /> <br/>
+        coming up slowly...
       </div>
     </div>
   </Layout>
