@@ -6,11 +6,12 @@ import Nav from './nav'
 
 type Props = {
   children?: Element<any>,
-  title?: string
+  title?: string,
+  className?: string
 }
 
-export default ({children, title = 'Gona'}: Props) => (
-  <div>
+export default ({children, title = 'Gona', className}: Props) => (
+  <div className={className}>
    <Head title={`Walk slowly | ${title}`} />
 
    <div className="container">
