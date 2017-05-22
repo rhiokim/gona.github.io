@@ -18,7 +18,7 @@ export default () => (
 
       <div className="section philosophy">
         <div className="container">
-          <h2 className="title">Do you <b>gonna</b> <u>do</u> something?</h2>
+          <h2 className="title">You <b>gonna</b> <u>do</u> something?</h2>
           <div className="row story">
             할일이 많다는 건<br/>
             그것은 오늘 할일을 집중하지 못하게 해요.<br/>
