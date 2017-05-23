@@ -4,6 +4,18 @@ import Link from 'next/link'
 import Head from './head'
 import Nav from './nav'
 
+import Router from 'next/router'
+import NProgress from 'nprogress'
+
+// @TODO need to refactor
+Router.onRouteChangeStart = (url) => {
+  NProgress.start()
+}
+
+Router.onRouteChangeComplete = () => {
+  NProgress.done()
+}
+
 type Props = {
   children?: Element<any>,
   title?: string,

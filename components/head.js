@@ -117,6 +117,7 @@ const Head = (props: Props) => (
     <link rel="stylesheet" href="/static/css/skeleton.css" />
     <link rel="stylesheet" href="/static/css/main.css" />
     <link rel="stylesheet" href="/static/css/release-notes.css" />
+    <link rel="stylesheet" href="/static/css/nprogress.min.css" />
   </NextHead>
 );
 
