@@ -1,14 +1,15 @@
 // @flow
 import Layout from '../components/layout'
+import AnimateTitle from '../components/animateTitle'
 
 export default () => (
   <Layout>
     <div className="container">
       <div className="section philosophy">
         <div className="container">
-          <h2 className="title"><strong>Gona</strong></h2>
+          <AnimateTitle title="GONA" className="title"/>
           <div className="row story">
-            Gona is Electron based Application to manage tasks, meetings and alarm.<br/>
+            Gona is Electron based application to manage tasks, meetings and alarms.<br/>
             And it's inspired by <i>I'm <strong>gonna</strong> <u>do</u> something</i><br/>
             <br/>
             <code>$ gona do 'task'</code>
@@ -20,9 +21,6 @@ export default () => (
         <div className="container">
           <h2 className="title">You <b>gonna</b> <u>do</u> something?</h2>
           <div className="row story">
-            할일이 많다는 건<br/>
-            그것은 오늘 할일을 집중하지 못하게 해요.<br/>
-            <br/>
             <strong><u>Only five important things</u></strong><br/>
             It is enough today with <strong>five important things</strong> to do.<br/>
             You already have done a lot of things today<br/>

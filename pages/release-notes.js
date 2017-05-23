@@ -25,7 +25,7 @@ export default class ReleaseNotes extends React.Component {
     const {body} = this.props
     return (
       <Layout title="release notes" className="release-notes">
-        <div className="container">
+        <div className="container" style={{marginTop: '7rem'}}>
           <div className="row contents" dangerouslySetInnerHTML={{__html: body}}>
           </div>
         </div>

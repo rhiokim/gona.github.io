@@ -23,12 +23,7 @@ const Head = (props: Props) => (
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
-      rel="stylesheet"
-      type="text/css"
-    />
-
+    <link href="//fonts.googleapis.com/css?family=Rubik|Unica+One" rel="stylesheet"/>
     <link rel="icon" sizes="192x192" href="/static/touch-icon.png" />
     <link rel="apple-touch-icon" href="/static/touch-icon.png" />
     {/*<link rel="mask-icon" href="/static/images/favicon-mask.svg" color="#49B882" />*/}
